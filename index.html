@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-container">
+        <h1>Welcome to the 3D Quiz!</h1>
+        <p>Test your knowledge in a fun and interactive way!</p>
+        <button id="start-button">Start Quiz</button>
+    </div> 
+
+    <div class="quiz-container hidden">
+        <div class="card">
+            <div class="card-front">
+                <div id="question" class="question">Loading question...</div>
+                <ul id="options" class="options"></ul>
+            </div>
+            <div class="card-back">
+                <div id="feedback" class="question">Answer feedback will appear here</div>
+                <button id="next" style="margin-top: 20px;">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-container hidden">
+        <h1>Quiz Results</h1>
+        <p id="result-text"></p>
+        <button id="restart-button">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
